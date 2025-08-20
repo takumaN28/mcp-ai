@@ -1,0 +1,38 @@
+---
+title: opneAI APIを使用した文言を意味ベクトルに変換後、ベクトルと比較
+slug: untitled-22c52699
+tags:
+  - api
+  - MCP
+  - AI
+created: 2025-08-07
+---
+
+
+## Context
+
+
+日々の開発やナレッジを集積し、エンジニア向けMCPサーバーを構築する。その中で、自然言語による検索（意味・意図）で目的の.mdナレッジにたどり着ける機能を必要とした。
+
+
+## Intent
+
+- Markdown形式の技術ナレッジをAI検索で活用したい
+- 検索クエリが曖昧・口語でも意図を汲み取れるようにしたい
+- エンジニアが「知ってそうなナレッジ」に自然にアクセスできるようにしたい
+
+## Knowledge
+
+- OpenAIの `text-embedding-3-small` モデルを使い、Markdown内容をベクトル化（1536次元）
+- クエリも同じくEmbeddingし、`cosine similarity` で類似度を計算
+- 類似度が高いナレッジを上位から表示
+- `.md` → `.json` 形式でベクトルをローカル保存（`src/data/embeddings.json`）
+
+## Decision / Result
+
+- OpenAI APIを使用するため課金（APIキーを`.env`管理）
+- Embedding変換を `scripts/embedAll.ts` にて自動化
+- 類似度検索を `lib/vectorStore.ts` にて処理
+- 意味検索のUIは `/ai-search` ページで動作確認済み
+- 将来的に意図補完（ChatGPTによるクエリの再解釈）にも拡張予定
+

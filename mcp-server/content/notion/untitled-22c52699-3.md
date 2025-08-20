@@ -1,0 +1,32 @@
+---
+title: z-indexが効かないバグ
+slug: untitled-22c52699-3
+tags:
+  - bug
+  - css
+created: 2025-08-07
+---
+
+
+## Context
+
+
+モーダルやドロップダウンを重ねたが、`z-index` が効かず背面に表示される問題が発生。
+
+
+## Intent
+
+
+モーダルやドロップダウンが常に最前面に表示されるようにしたい。
+
+
+## Knowledge
+
+- `z-index` は `position` プロパティと併用しないと効かない。
+- stacking context が意図せず生成されることがある。
+
+## Decision / Result
+
+- 対象要素に `position: relative` を追加。
+- 親要素の `transform`, `filter`, `will-change` など stacking context を生成するスタイルを見直した。
+

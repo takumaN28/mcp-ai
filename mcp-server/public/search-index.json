@@ -1,0 +1,1012 @@
+{
+  "index": {
+    "version": "2.3.9",
+    "fields": [
+      "title",
+      "body"
+    ],
+    "fieldVectors": [
+      [
+        "title/2025-07-09-test",
+        [
+          0,
+          2.268
+        ]
+      ],
+      [
+        "body/2025-07-09-test",
+        [
+          1,
+          0.103,
+          2,
+          0.188,
+          3,
+          0.188,
+          4,
+          0.188,
+          5,
+          0.188,
+          6,
+          0.188
+        ]
+      ],
+      [
+        "title/scroll-bug",
+        [
+          7,
+          2.268
+        ]
+      ],
+      [
+        "body/scroll-bug",
+        [
+          1,
+          0.101,
+          8,
+          2.411,
+          9,
+          2.411,
+          10,
+          2.411,
+          11,
+          2.411
+        ]
+      ],
+      [
+        "title/jank",
+        [
+          12,
+          2.268
+        ]
+      ],
+      [
+        "body/jank",
+        [
+          1,
+          0.102,
+          2,
+          0.148,
+          3,
+          0.148,
+          4,
+          0.148,
+          5,
+          0.148,
+          6,
+          0.148,
+          13,
+          1.725,
+          14,
+          0.726,
+          15,
+          1.783,
+          16,
+          1.783,
+          17,
+          1.725,
+          18,
+          1.725
+        ]
+      ],
+      [
+        "title/nextjs-app-router",
+        [
+          19,
+          1.429,
+          20,
+          1.044,
+          21,
+          1.044
+        ]
+      ],
+      [
+        "body/nextjs-app-router",
+        [
+          1,
+          0.093,
+          2,
+          0.156,
+          3,
+          0.156,
+          4,
+          0.156,
+          5,
+          0.156,
+          6,
+          0.156,
+          20,
+          2.132,
+          21,
+          1.853,
+          22,
+          1.822,
+          23,
+          1.822,
+          24,
+          1.822,
+          25,
+          1.822,
+          26,
+          1.822,
+          27,
+          1.822,
+          28,
+          1.822
+        ]
+      ],
+      [
+        "title/notion-api",
+        [
+          29,
+          1.281,
+          30,
+          1.754
+        ]
+      ],
+      [
+        "body/notion-api",
+        [
+          1,
+          0.098,
+          2,
+          0.162,
+          3,
+          0.162,
+          4,
+          0.162,
+          5,
+          0.162,
+          6,
+          0.162,
+          29,
+          1.903,
+          31,
+          1.893,
+          32,
+          1.893,
+          33,
+          1.893,
+          34,
+          1.893,
+          35,
+          1.893,
+          36,
+          1.893
+        ]
+      ],
+      [
+        "title/reactuseeffect",
+        [
+          37,
+          2.268
+        ]
+      ],
+      [
+        "body/reactuseeffect",
+        [
+          1,
+          0.101,
+          2,
+          0.162,
+          3,
+          0.162,
+          4,
+          0.162,
+          5,
+          0.162,
+          6,
+          0.162,
+          38,
+          2.978,
+          39,
+          1.893,
+          40,
+          1.893,
+          41,
+          1.893
+        ]
+      ],
+      [
+        "title/tailwind-css-1",
+        [
+          14,
+          0.738,
+          42,
+          0.738
+        ]
+      ],
+      [
+        "body/tailwind-css-1",
+        [
+          1,
+          0.094,
+          2,
+          0.162,
+          3,
+          0.162,
+          4,
+          0.162,
+          5,
+          0.162,
+          6,
+          0.162,
+          42,
+          1.096,
+          43,
+          1.893,
+          44,
+          1.893,
+          45,
+          1.893,
+          46,
+          1.893,
+          47,
+          1.893,
+          48,
+          1.893,
+          49,
+          1.893,
+          50,
+          1.893
+        ]
+      ],
+      [
+        "title/tailwind-css",
+        [
+          14,
+          0.738,
+          42,
+          0.738
+        ]
+      ],
+      [
+        "body/tailwind-css",
+        [
+          1,
+          0.093,
+          2,
+          0.172,
+          3,
+          0.172,
+          4,
+          0.172,
+          5,
+          0.172,
+          6,
+          0.172,
+          14,
+          1.384,
+          42,
+          1.384
+        ]
+      ],
+      [
+        "title/z-index",
+        [
+          51,
+          1.281,
+          52,
+          1.281
+        ]
+      ],
+      [
+        "body/z-index",
+        [
+          1,
+          0.101,
+          2,
+          0.225,
+          3,
+          0.129,
+          4,
+          0.129,
+          5,
+          0.129,
+          6,
+          0.129,
+          15,
+          1.103,
+          16,
+          1.103,
+          51,
+          1.62,
+          52,
+          1.62,
+          53,
+          2.217,
+          54,
+          2.217,
+          55,
+          1.51,
+          56,
+          1.51
+        ]
+      ]
+    ],
+    "invertedIndex": [
+      [
+        "",
+        {
+          "_index": 1,
+          "title": {},
+          "body": {
+            "2025-07-09-test": {},
+            "scroll-bug": {},
+            "jank": {},
+            "nextjs-app-router": {},
+            "notion-api": {},
+            "reactuseeffect": {},
+            "tailwind-css-1": {},
+            "tailwind-css": {},
+            "z-index": {}
+          }
+        }
+      ],
+      [
+        "500",
+        {
+          "_index": 46,
+          "title": {},
+          "body": {
+            "tailwind-css-1": {}
+          }
+        }
+      ],
+      [
+        "api",
+        {
+          "_index": 30,
+          "title": {
+            "notion-api": {}
+          },
+          "body": {}
+        }
+      ],
+      [
+        "apiキーとデータベースid",
+        {
+          "_index": 34,
+          "title": {},
+          "body": {
+            "notion-api": {}
+          }
+        }
+      ],
+      [
+        "app",
+        {
+          "_index": 20,
+          "title": {
+            "nextjs-app-router": {}
+          },
+          "body": {
+            "nextjs-app-router": {}
+          }
+        }
+      ],
+      [
+        "autoprefix",
+        {
+          "_index": 50,
+          "title": {},
+          "body": {
+            "tailwind-css-1": {}
+          }
+        }
+      ],
+      [
+        "bg",
+        {
+          "_index": 44,
+          "title": {},
+          "body": {
+            "tailwind-css-1": {}
+          }
+        }
+      ],
+      [
+        "blue",
+        {
+          "_index": 45,
+          "title": {},
+          "body": {
+            "tailwind-css-1": {}
+          }
+        }
+      ],
+      [
+        "chang",
+        {
+          "_index": 15,
+          "title": {},
+          "body": {
+            "jank": {},
+            "z-index": {}
+          }
+        }
+      ],
+      [
+        "context",
+        {
+          "_index": 2,
+          "title": {},
+          "body": {
+            "2025-07-09-test": {},
+            "jank": {},
+            "nextjs-app-router": {},
+            "notion-api": {},
+            "reactuseeffect": {},
+            "tailwind-css-1": {},
+            "tailwind-css": {},
+            "z-index": {}
+          }
+        }
+      ],
+      [
+        "css",
+        {
+          "_index": 14,
+          "title": {
+            "tailwind-css-1": {},
+            "tailwind-css": {}
+          },
+          "body": {
+            "jank": {},
+            "tailwind-css": {}
+          }
+        }
+      ],
+      [
+        "cssはユーティリティファーストなcss",
+        {
+          "_index": 43,
+          "title": {},
+          "body": {
+            "tailwind-css-1": {}
+          }
+        }
+      ],
+      [
+        "decis",
+        {
+          "_index": 5,
+          "title": {},
+          "body": {
+            "2025-07-09-test": {},
+            "jank": {},
+            "nextjs-app-router": {},
+            "notion-api": {},
+            "reactuseeffect": {},
+            "tailwind-css-1": {},
+            "tailwind-css": {},
+            "z-index": {}
+          }
+        }
+      ],
+      [
+        "domの高さ変動によりscrolltrigg",
+        {
+          "_index": 9,
+          "title": {},
+          "body": {
+            "scroll-bug": {}
+          }
+        }
+      ],
+      [
+        "env",
+        {
+          "_index": 33,
+          "title": {},
+          "body": {
+            "notion-api": {}
+          }
+        }
+      ],
+      [
+        "filter",
+        {
+          "_index": 56,
+          "title": {},
+          "body": {
+            "z-index": {}
+          }
+        }
+      ],
+      [
+        "index",
+        {
+          "_index": 52,
+          "title": {
+            "z-index": {}
+          },
+          "body": {
+            "z-index": {}
+          }
+        }
+      ],
+      [
+        "intent",
+        {
+          "_index": 3,
+          "title": {},
+          "body": {
+            "2025-07-09-test": {},
+            "jank": {},
+            "nextjs-app-router": {},
+            "notion-api": {},
+            "reactuseeffect": {},
+            "tailwind-css-1": {},
+            "tailwind-css": {},
+            "z-index": {}
+          }
+        }
+      ],
+      [
+        "jank",
+        {
+          "_index": 12,
+          "title": {
+            "jank": {}
+          },
+          "body": {}
+        }
+      ],
+      [
+        "knowledg",
+        {
+          "_index": 4,
+          "title": {},
+          "body": {
+            "2025-07-09-test": {},
+            "jank": {},
+            "nextjs-app-router": {},
+            "notion-api": {},
+            "reactuseeffect": {},
+            "tailwind-css-1": {},
+            "tailwind-css": {},
+            "z-index": {}
+          }
+        }
+      ],
+      [
+        "layout.tsx",
+        {
+          "_index": 25,
+          "title": {},
+          "body": {
+            "nextjs-app-router": {}
+          }
+        }
+      ],
+      [
+        "loading.tsx",
+        {
+          "_index": 26,
+          "title": {},
+          "body": {
+            "nextjs-app-router": {}
+          }
+        }
+      ],
+      [
+        "mcpサーバーの構築にapp",
+        {
+          "_index": 23,
+          "title": {},
+          "body": {
+            "nextjs-app-router": {}
+          }
+        }
+      ],
+      [
+        "md.t",
+        {
+          "_index": 36,
+          "title": {},
+          "body": {
+            "notion-api": {}
+          }
+        }
+      ],
+      [
+        "next",
+        {
+          "_index": 28,
+          "title": {},
+          "body": {
+            "nextjs-app-router": {}
+          }
+        }
+      ],
+      [
+        "next.j",
+        {
+          "_index": 19,
+          "title": {
+            "nextjs-app-router": {}
+          },
+          "body": {}
+        }
+      ],
+      [
+        "next.jsのapp",
+        {
+          "_index": 22,
+          "title": {},
+          "body": {
+            "nextjs-app-router": {}
+          }
+        }
+      ],
+      [
+        "notion",
+        {
+          "_index": 29,
+          "title": {
+            "notion-api": {}
+          },
+          "body": {
+            "notion-api": {}
+          }
+        }
+      ],
+      [
+        "notionhq/cli",
+        {
+          "_index": 32,
+          "title": {},
+          "body": {
+            "notion-api": {}
+          }
+        }
+      ],
+      [
+        "notionに書いたナレッジをmarkdownに自動変換し、mcp",
+        {
+          "_index": 31,
+          "title": {},
+          "body": {
+            "notion-api": {}
+          }
+        }
+      ],
+      [
+        "page.tsx",
+        {
+          "_index": 24,
+          "title": {},
+          "body": {
+            "nextjs-app-router": {}
+          }
+        }
+      ],
+      [
+        "posit",
+        {
+          "_index": 53,
+          "title": {},
+          "body": {
+            "z-index": {}
+          }
+        }
+      ],
+      [
+        "postcss",
+        {
+          "_index": 49,
+          "title": {},
+          "body": {
+            "tailwind-css-1": {}
+          }
+        }
+      ],
+      [
+        "postcssやautoprefix",
+        {
+          "_index": 47,
+          "title": {},
+          "body": {
+            "tailwind-css-1": {}
+          }
+        }
+      ],
+      [
+        "reactでuseeffect",
+        {
+          "_index": 37,
+          "title": {
+            "reactuseeffect": {}
+          },
+          "body": {}
+        }
+      ],
+      [
+        "rel",
+        {
+          "_index": 55,
+          "title": {},
+          "body": {
+            "z-index": {}
+          }
+        }
+      ],
+      [
+        "requestanimationfram",
+        {
+          "_index": 18,
+          "title": {},
+          "body": {
+            "jank": {}
+          }
+        }
+      ],
+      [
+        "resiz",
+        {
+          "_index": 11,
+          "title": {},
+          "body": {
+            "scroll-bug": {}
+          }
+        }
+      ],
+      [
+        "result",
+        {
+          "_index": 6,
+          "title": {},
+          "body": {
+            "2025-07-09-test": {},
+            "jank": {},
+            "nextjs-app-router": {},
+            "notion-api": {},
+            "reactuseeffect": {},
+            "tailwind-css-1": {},
+            "tailwind-css": {},
+            "z-index": {}
+          }
+        }
+      ],
+      [
+        "router",
+        {
+          "_index": 21,
+          "title": {
+            "nextjs-app-router": {}
+          },
+          "body": {
+            "nextjs-app-router": {}
+          }
+        }
+      ],
+      [
+        "router構成で`cr",
+        {
+          "_index": 27,
+          "title": {},
+          "body": {
+            "nextjs-app-router": {}
+          }
+        }
+      ],
+      [
+        "scripts/sync",
+        {
+          "_index": 35,
+          "title": {},
+          "body": {
+            "notion-api": {}
+          }
+        }
+      ],
+      [
+        "scroll",
+        {
+          "_index": 17,
+          "title": {},
+          "body": {
+            "jank": {}
+          }
+        }
+      ],
+      [
+        "scrolltrigger.refresh",
+        {
+          "_index": 10,
+          "title": {},
+          "body": {
+            "scroll-bug": {}
+          }
+        }
+      ],
+      [
+        "scrolltriggerでend",
+        {
+          "_index": 7,
+          "title": {
+            "scroll-bug": {}
+          },
+          "body": {}
+        }
+      ],
+      [
+        "scrolltriggerを使っていて、リサイズ時にend",
+        {
+          "_index": 8,
+          "title": {},
+          "body": {
+            "scroll-bug": {}
+          }
+        }
+      ],
+      [
+        "setstat",
+        {
+          "_index": 39,
+          "title": {},
+          "body": {
+            "reactuseeffect": {}
+          }
+        }
+      ],
+      [
+        "stack",
+        {
+          "_index": 54,
+          "title": {},
+          "body": {
+            "z-index": {}
+          }
+        }
+      ],
+      [
+        "state",
+        {
+          "_index": 40,
+          "title": {},
+          "body": {
+            "reactuseeffect": {}
+          }
+        }
+      ],
+      [
+        "tailwind",
+        {
+          "_index": 42,
+          "title": {
+            "tailwind-css-1": {},
+            "tailwind-css": {}
+          },
+          "body": {
+            "tailwind-css-1": {},
+            "tailwind-css": {}
+          }
+        }
+      ],
+      [
+        "tailwindcss",
+        {
+          "_index": 48,
+          "title": {},
+          "body": {
+            "tailwind-css-1": {}
+          }
+        }
+      ],
+      [
+        "test",
+        {
+          "_index": 0,
+          "title": {
+            "2025-07-09-test": {}
+          },
+          "body": {}
+        }
+      ],
+      [
+        "transform",
+        {
+          "_index": 16,
+          "title": {},
+          "body": {
+            "jank": {},
+            "z-index": {}
+          }
+        }
+      ],
+      [
+        "useeffect",
+        {
+          "_index": 38,
+          "title": {},
+          "body": {
+            "reactuseeffect": {}
+          }
+        }
+      ],
+      [
+        "useref",
+        {
+          "_index": 41,
+          "title": {},
+          "body": {
+            "reactuseeffect": {}
+          }
+        }
+      ],
+      [
+        "ux",
+        {
+          "_index": 13,
+          "title": {},
+          "body": {
+            "jank": {}
+          }
+        }
+      ],
+      [
+        "z",
+        {
+          "_index": 51,
+          "title": {
+            "z-index": {}
+          },
+          "body": {
+            "z-index": {}
+          }
+        }
+      ]
+    ],
+    "pipeline": [
+      "stemmer"
+    ]
+  },
+  "documents": [
+    {
+      "id": "2025-07-09-test",
+      "title": "testタイトル",
+      "body": "\n## Context\n\n（どんな状況で？）\n\n## Intent\n\n（何を解決したかった？）\n\n## Knowledge\n\n（調査・検証・試行錯誤）\n\n## Decision / Result\n\n（採用した対応、結果・反省点など）\n"
+    },
+    {
+      "id": "scroll-bug",
+      "title": "ScrollTriggerでend位置がズレる問題",
+      "body": "\nScrollTriggerを使っていて、リサイズ時にend位置がずれる問題が発生。\n\n## 原因\n- DOMの高さ変動によりScrollTriggerのキャッシュが狂う\n\n## 解決策\n- `ScrollTrigger.refresh()` を `resize` イベントで呼び出すことで修正可能"
+    },
+    {
+      "id": "jank",
+      "title": "スクロール時のカクつき（Jank）の解消",
+      "body": "\n\n## Context\n\n\nスクロール時にカクつく現象が発生し、UXが悪化。\n\n\n## Intent\n\n\nスムーズなスクロール体験を実現したい。\n\n\n## Knowledge\n\n- スクロールイベントに重い処理を直接書くとメインスレッドがブロックされる。\n- CSSの `will-change` や `transform` による最適化が重要。\n\n## Decision / Result\n\n- `scroll` イベント処理に `requestAnimationFrame` を使用。\n- スクロール要素に `will-change: transform` を指定してブラウザの最適化を促した。\n\n"
+    },
+    {
+      "id": "nextjs-app-router",
+      "title": "Next.js App Routerの導入",
+      "body": "\n\n## Context\n\n\nNext.jsのApp Router構成に切り替えることで、より柔軟なルーティングとレイアウト管理が可能になる。\n\n\n## Intent\n\n\nMCPサーバーの構築にApp Routerを使うことで、今後の拡張性を確保したい。\n\n\n## Knowledge\n\n- `app/` ディレクトリベースでのルーティング\n- `page.tsx`, `layout.tsx`, `loading.tsx`などのファイル構成\n\n## Decision / Result\n\n\nApp Router構成で`create-next-app`にて初期化済。\n\n\n"
+    },
+    {
+      "id": "notion-api",
+      "title": "Notion APIでナレッジ同期",
+      "body": "\n\n## Context\n\n\nNotionに書いたナレッジをMarkdownに自動変換し、MCPサーバーに取り込む。\n\n\n## Intent\n\n\nNotionで記録した知見をそのままコードベースで検索・再利用可能にしたい。\n\n\n## Knowledge\n\n- `@notionhq/client` を使ってデータベースから取得\n- `.env` にAPIキーとデータベースIDを保存\n\n## Decision / Result\n\n\n同期スクリプトを `scripts/sync-notion-to-md.ts` にて作成・運用中。\n\n\n"
+    },
+    {
+      "id": "reactuseeffect",
+      "title": "ReactでuseEffectが無限ループするバグ",
+      "body": "\n\n## Context\n\n\n`useEffect` 内で状態更新を行っていたところ、無限ループが発生。\n\n\n## Intent\n\n\n必要なタイミングでのみ状態更新が行われるようにしたい。\n\n\n## Knowledge\n\n- `useEffect` の依存配列に指定した値が変化すると再実行される。\n- `setState` により依存値が毎回変わると無限再実行になる。\n\n## Decision / Result\n\n- `useEffect` の依存配列を適切に見直し、state更新ロジックを条件分岐で制御。\n- `useRef` を使って初回のみ処理するように変更。\n\n"
+    },
+    {
+      "id": "tailwind-css-1",
+      "title": "Tailwind CSSの基本",
+      "body": "\n\n## Context\n\n\nTailwind CSSはユーティリティファーストなCSSフレームワークで、クラス単位でスタイリングを行う。\n\n\n## Intent\n\n\n次のプロジェクトでスタイルを迅速に適用するためにTailwindを導入する。\n\n\n## Knowledge\n\n- `bg-blue-500` のようなクラスで色やサイズなどを制御できる\n- PostCSSやAutoprefixerとの連携が一般的\n\n## Decision / Result\n\n\ntailwindcss, postcss, autoprefixerを導入済み。\n\n\n"
+    },
+    {
+      "id": "tailwind-css",
+      "title": "Tailwind CSSの応用",
+      "body": "\n\n## Context\n\n\nTailwind CSSの応用\n\n\n## Intent\n\n\nTailwind CSSの応用\n\n\n## Knowledge\n\n- Tailwind CSSの応用\n\n## Decision / Result\n\n\nTailwind CSSの応用\n\n\n"
+    },
+    {
+      "id": "z-index",
+      "title": "z-indexが効かないバグ",
+      "body": "\n\n## Context\n\n\nモーダルやドロップダウンを重ねたが、`z-index` が効かず背面に表示される問題が発生。\n\n\n## Intent\n\n\nモーダルやドロップダウンが常に最前面に表示されるようにしたい。\n\n\n## Knowledge\n\n- `z-index` は `position` プロパティと併用しないと効かない。\n- stacking context が意図せず生成されることがある。\n\n## Decision / Result\n\n- 対象要素に `position: relative` を追加。\n- 親要素の `transform`, `filter`, `will-change` など stacking context を生成するスタイルを見直した。\n\n"
+    }
+  ]
+}

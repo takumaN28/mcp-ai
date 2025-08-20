@@ -1,0 +1,33 @@
+---
+title: スクロール時のカクつき（Jank）の解消
+slug: untitled-22c52699-1
+tags:
+  - css
+  - scroll
+  - bug
+created: 2025-08-07
+---
+
+
+## Context
+
+
+スクロール時にカクつく現象が発生し、UXが悪化。
+
+
+## Intent
+
+
+スムーズなスクロール体験を実現したい。
+
+
+## Knowledge
+
+- スクロールイベントに重い処理を直接書くとメインスレッドがブロックされる。
+- CSSの `will-change` や `transform` による最適化が重要。
+
+## Decision / Result
+
+- `scroll` イベント処理に `requestAnimationFrame` を使用。
+- スクロール要素に `will-change: transform` を指定してブラウザの最適化を促した。
+
