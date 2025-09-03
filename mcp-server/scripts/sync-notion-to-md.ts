@@ -28,7 +28,18 @@ if (fs.existsSync(outputDir)) {
     if (!("properties" in page)) continue;
 
     const props = page.properties as any;
-    console.log("page.properties.page.title", page.properties.page.title?.[0]?.plain_text)
+    const pagePropAny = (props.page ?? props["ページ"] ?? props["名前"] ?? props["Name"]) as any;
+    let pageTitleText: string | undefined;
+    if (pagePropAny?.type === "title") {
+      pageTitleText = pagePropAny.title?.[0]?.plain_text;
+    } else if (pagePropAny?.type === "rich_text") {
+      pageTitleText = pagePropAny.rich_text?.[0]?.plain_text;
+    } else if (props["名前"]?.title?.[0]?.plain_text) {
+      pageTitleText = props["名前"].title[0].plain_text;
+    } else if (props["Name"]?.title?.[0]?.plain_text) {
+      pageTitleText = props["Name"].title[0].plain_text;
+    }
+    console.log("page title", pageTitleText);
     // console.log("page.properties", page.properties)
     console.log("page.properties.tags", page.properties.tags)
     console.log("props['ページ']", props["ページ"])
@@ -38,7 +49,7 @@ if (fs.existsSync(outputDir)) {
     const baseSlug = hasAscii
       ? rawTitle.replace(/[^\w\s-]/g, "").replace(/\s+/g, "-").toLowerCase()
       : `${page.id.slice(0, 8)}`;
-    const title = page.properties.page.title?.[0]?.plain_text;
+    const title = pageTitleText ?? rawTitle;
 
     let slug = baseSlug;
     let slugCounter = 1;
@@ -46,7 +57,7 @@ if (fs.existsSync(outputDir)) {
       slug = `${baseSlug}-${slugCounter}`;
       slugCounter++;
     }
-    const tags = props["tags"]?.multi_select?.map((tag: any) => tag.name) || [];
+    const tags: string[] = (props["tags"]?.multi_select?.map((tag: any) => String(tag?.name ?? "")) ?? []).filter((n: string) => n.length > 0);
     const created = props["作成日"]?.date?.start ?? new Date().toISOString().split("T")[0];
 
     const mdBlocks = await n2m.pageToMarkdown(page.id);
@@ -56,7 +67,7 @@ if (fs.existsSync(outputDir)) {
 title: ${title}
 slug: ${slug}
 tags:
-${tags.map((t) => `  - ${t}`).join("\n")}
+${tags.map((t: string) => `  - ${t}`).join("\n")}
 created: ${created}
 ---
 

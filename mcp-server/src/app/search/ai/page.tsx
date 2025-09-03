@@ -2,15 +2,17 @@
 
 import { useState } from "react";
 
+type SearchResult = { slug: string; title: string; summary?: string };
+
 export default function AiSearchPage() {
   const [query, setQuery] = useState("");
-  const [results, setResults] = useState<any[]>([]);
+  const [results, setResults] = useState<SearchResult[]>([]);
   const [loading, setLoading] = useState(false);
 
   const handleSearch = async () => {
     setLoading(true);
     const res = await fetch(`/api/ai-search?q=${encodeURIComponent(query)}`);
-    const data = await res.json();
+    const data = (await res.json()) as SearchResult[];
     setResults(data);
     setLoading(false);
   };
@@ -33,7 +35,7 @@ export default function AiSearchPage() {
         {loading ? "検索中..." : "検索"}
       </button>
       <ul className="space-y-4">
-        {results.map((item, idx) => (
+        {results.map((item: SearchResult, idx) => (
           <li key={idx}>
             <a href={`/knowledge/${item.slug}`} className="text-blue-600 hover:underline text-lg">
               {item.title}

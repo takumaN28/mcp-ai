@@ -28,7 +28,7 @@ export async function searchSimilarDocs(
   const topResults = scored
     .sort((a, b) => b.score - a.score)
     .slice(0, topK)
-    .map(({ embedding, score, ...rest }) => rest); // embeddingは返さない
+    .map(({ ...rest }) => rest); // embeddingとscoreは返さない
 
   return topResults;
 }

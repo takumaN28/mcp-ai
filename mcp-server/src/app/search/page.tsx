@@ -29,7 +29,7 @@ export default function SearchPage() {
         setDocuments(docs);
         console.log(index)
         console.log(docs)
-        console.log("🔍 index fields:", index.fields);
+        console.log("🔍 index fields:", ((data.index as unknown) as { fields?: unknown })?.fields ?? "(unknown)");
         console.log("🧾 document ids:", Object.keys(docs));
         console.log("📝 example doc:", docs[Object.keys(docs)[0]]);
       });

@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { getKnowledgeBySlug } from "@/lib/getKnowledgeBySlug";
 import { notFound } from "next/navigation";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 
 export async function generateStaticParams() {
   const knowledgeDir = path.join(process.cwd(), "content", "knowledge");
@@ -14,15 +14,14 @@ export async function generateStaticParams() {
   });
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   return {
     title: `ナレッジ - ${slug}`,
   };
 }
 
-export default async function KnowledgeDetailPage(input: { params: { slug: string } }) {
-  const { params } = await input;
+export default async function KnowledgeDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   try {
     const data = await getKnowledgeBySlug(slug);
@@ -42,7 +41,7 @@ export default async function KnowledgeDetailPage(input: { params: { slug: strin
         />
       </main>
     );
-  } catch (e) {
+  } catch {
     notFound();
   }
 }
