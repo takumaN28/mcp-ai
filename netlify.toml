@@ -1,7 +1,6 @@
 # mcp-ai/netlify.toml
-base = "mcp-server"
-
 [build]
+  base = "mcp-server"
   command = "npm run build"
   publish = ".next"
 
